@@ -38,7 +38,7 @@ install:
     then
         exit 0;
     fi
-  - tools/travis/install_dependencies.sh > install_dependencies.log 2>&1
+  - tools/travis/install_dependencies.sh
 
 script:
   - if [[ ${COVERITY_SCAN_BRANCH} == 1 ]];
@@ -50,7 +50,6 @@ script:
 
 
 after_failure:
-  - cat install_dependencies.log || true
   - cat build_travis/CMakeFiles/CMakeOutput.log
 
 addons:
