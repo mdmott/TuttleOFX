@@ -103,6 +103,16 @@ if (TuttleBoost_FOUND)
   install(TARGETS tuttleHost DESTINATION lib/)
   install(TARGETS sequenceParser DESTINATION lib/)
 
+  install(DIRECTORY src/tuttle/host src/tuttle/common
+          DESTINATION ${TUTTLE_INCLUDEDIR}/tuttle
+          FILES_MATCHING PATTERN "*.hpp")
+  install(DIRECTORY src/tuttle/host src/tuttle/common
+          DESTINATION ${TUTTLE_INCLUDEDIR}/tuttle
+          FILES_MATCHING PATTERN "*.h")
+  install(DIRECTORY src/tuttle/host src/tuttle/common
+          DESTINATION ${TUTTLE_INCLUDEDIR}/tuttle
+          FILES_MATCHING PATTERN "*.tcc")
+
   # Install boost library along with tuttle library
   # Need to copy the files pointed by symlinks instead of the symlinks
   include(TuttleMacros)

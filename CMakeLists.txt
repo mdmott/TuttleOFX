@@ -26,3 +26,7 @@ if(DOXYGEN_FOUND)
   # install(DIRECTORY "${CMAKE_BINARY_DIR}/share/tuttle/doc" DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tuttle/doc")
 
 endif(DOXYGEN_FOUND)
+
+install(DIRECTORY libraries/openfxHack/include/
+        DESTINATION ${TUTTLE_INCLUDEDIR}
+        FILES_MATCHING PATTERN "*.h")
