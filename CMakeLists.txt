@@ -10,14 +10,8 @@ if(TUTTLE_PRODUCTION)
   add_definitions(-DTUTTLE_PRODUCTION)
 endif()
 
-# Create an alias for all OFX plugins.
-add_custom_target(ofxplugins)
-
 # Include subdirs
 add_subdirectory(libraries/tuttle)
-add_subdirectory(libraries/avTranscoder)
-add_subdirectory(plugins)
-add_subdirectory(applications)
 
 # Add a target to generate API documentation with Doxygen
 find_package(Doxygen)
