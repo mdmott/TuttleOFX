@@ -116,7 +116,7 @@ if (TuttleBoost_FOUND)
   # Install boost library along with tuttle library
   # Need to copy the files pointed by symlinks instead of the symlinks
   include(TuttleMacros)
-  tuttle_install_shared_libs("${Boost_LIBRARIES}")
+  #tuttle_install_shared_libs("${Boost_LIBRARIES}")
 
   # Python bindings with Swig 
   find_package(SWIG)
@@ -198,4 +198,6 @@ if (TuttleBoost_FOUND)
     message("SWIG not found, will not build python bindings")
   endif(SWIG_FOUND)
 
+else(TuttleBoost_FOUND)
+    message(FATAL_ERROR "Boost not found")
 endif(TuttleBoost_FOUND)
