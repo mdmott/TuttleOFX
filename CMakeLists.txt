@@ -10,6 +10,8 @@ if(TUTTLE_PRODUCTION)
   add_definitions(-DTUTTLE_PRODUCTION)
 endif()
 
+add_definitions(-DTUTTLE_EXPORTS)
+
 # Create an alias for all OFX plugins.
 add_custom_target(ofxplugins)
 
