@@ -17,6 +17,7 @@
 #include <tuttle/host/attribute/Attribute.hpp>
 #include <tuttle/host/memory/MemoryCache.hpp>
 #include <tuttle/common/utils/global.hpp>
+#include <tuttle/common/export.h>
 
 #include <boost/ptr_container/ptr_map.hpp>
 
@@ -34,7 +35,7 @@ class NodeInit;
 /**
  * @brief A user graph to manipulate OpenFX nodes.
  */
-class Graph
+class TUTTLE_EXPORT Graph
 {
 public:
 	typedef graph::UVertex Vertex;

@@ -10,6 +10,8 @@ if(TUTTLE_PRODUCTION)
   add_definitions(-DTUTTLE_PRODUCTION)
 endif()
 
+add_definitions(-DTUTTLE_EXPORTS)
+
 # Include subdirs
 add_subdirectory(libraries/tuttle)
 
