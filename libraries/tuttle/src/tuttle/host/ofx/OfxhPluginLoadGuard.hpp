@@ -14,7 +14,7 @@ namespace ofx {
 /**
  * Wrapper class for Plugin/PluginBinary. Use in a RAII fashion to make sure the binary gets unloaded when needed.
  */
-class OfxhPluginLoadGuard
+class TUTTLE_EXPORT OfxhPluginLoadGuard
 {
 	OfxhPlugin* _plugin;
 	OfxhPluginBinary* _pluginBinary;

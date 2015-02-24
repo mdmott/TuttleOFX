@@ -1,6 +1,8 @@
 #ifndef _TUTTLE_HOST_OFX_OBJECT_HPP_
 #define _TUTTLE_HOST_OFX_OBJECT_HPP_
 
+#include <tuttle/common/export.h>
+
 namespace tuttle {
 namespace host {
 namespace ofx {
@@ -10,7 +12,7 @@ namespace ofx {
  * So all these objects can be seen as OfxhIObject (reinterpret_cast)
  * and then properly dynamic_cast to the desired class.
  */
-class OfxhIObject
+class TUTTLE_EXPORT OfxhIObject
 {
 public:
 	virtual ~OfxhIObject() = 0;

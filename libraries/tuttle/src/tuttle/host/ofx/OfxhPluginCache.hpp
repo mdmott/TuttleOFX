@@ -55,7 +55,7 @@ struct PluginCacheSupportedApi;
 /**
  * Where we keep our plugins.
  */
-class OfxhPluginCache
+class TUTTLE_EXPORT OfxhPluginCache
 {
 public:
 	typedef OfxhPluginCache This;

@@ -20,7 +20,7 @@ class OfxhPluginCache;
  * Has a set of plugins inside it and which it owns
  * These are owned by a PluginCache
  */
-class OfxhPluginBinary
+class TUTTLE_EXPORT OfxhPluginBinary
 {
 public:
 	typedef OfxhPluginBinary This;

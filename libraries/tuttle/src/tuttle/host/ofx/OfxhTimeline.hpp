@@ -41,7 +41,7 @@ namespace ofx {
  * Things that implement timeline controls derive from this ABC and implement the following
  * functions.
  */
-class OfxhITimeline : virtual public OfxhIObject
+class TUTTLE_EXPORT OfxhITimeline : virtual public OfxhIObject
 {
 public:
 	virtual ~OfxhITimeline() {}

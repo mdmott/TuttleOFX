@@ -52,7 +52,7 @@ class OfxhImageEffectNode;
 /**
  *  instance of an image inside an image effect
  */
-class OfxhImage : public property::OfxhSet
+class TUTTLE_EXPORT OfxhImage : public property::OfxhSet
 {
 public:
 	enum EReferenceOwner

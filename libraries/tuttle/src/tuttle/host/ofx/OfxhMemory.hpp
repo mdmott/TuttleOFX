@@ -33,6 +33,8 @@
 #include <ofxImageEffect.h>
 #include <cstring>
 
+#include <tuttle/common/export.h>
+
 namespace tuttle {
 namespace host {
 namespace ofx {
@@ -40,7 +42,7 @@ namespace ofx {
 /**
  * @todo use MemoryPool
  */
-class OfxhMemory
+class TUTTLE_EXPORT OfxhMemory
 {
 public:
 	OfxhMemory();

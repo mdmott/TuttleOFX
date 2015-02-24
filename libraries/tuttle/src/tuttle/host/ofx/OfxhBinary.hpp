@@ -38,6 +38,8 @@
 #include <string>
 #include <iostream>
 
+#include <tuttle/common/export.h>
+
 #ifndef WINDOWS
  #if ( defined( WIN32 ) || defined( WIN64 ) || defined( _WIN32 ) || defined( _WIN64 ) || defined( __WINDOWS__ ) || defined( __TOS_WIN__ ) || defined( __WIN32__ ) )
   #define WINDOWS
@@ -79,7 +81,7 @@ namespace host {
 namespace ofx {
 
 /// class representing a DLL/Shared Object/etc
-class OfxhBinary
+class TUTTLE_EXPORT OfxhBinary
 {
 public:
 	typedef OfxhBinary This;

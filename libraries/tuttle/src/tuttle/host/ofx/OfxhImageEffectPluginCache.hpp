@@ -18,7 +18,7 @@ namespace ofx {
 namespace imageEffect {
 
 /// implementation of the specific Image Effect handler API cache.
-class OfxhImageEffectPluginCache : public APICache::OfxhPluginAPICacheI
+class TUTTLE_EXPORT OfxhImageEffectPluginCache : public APICache::OfxhPluginAPICacheI
 {
 public:
 	typedef OfxhImageEffectPluginCache This;

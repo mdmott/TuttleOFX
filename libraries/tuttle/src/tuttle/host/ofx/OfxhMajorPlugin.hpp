@@ -7,7 +7,7 @@ namespace tuttle {
 namespace host {
 namespace ofx {
 
-class OfxhMajorPlugin
+class TUTTLE_EXPORT OfxhMajorPlugin
 {
 public:
 	typedef OfxhMajorPlugin This;

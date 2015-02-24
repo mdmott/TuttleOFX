@@ -25,7 +25,7 @@ namespace imageEffect {
 /**
  * base class to both effect descriptors and instances
  */
-class OfxhImageEffectNodeBase : virtual public OfxhIObject
+class TUTTLE_EXPORT OfxhImageEffectNodeBase : virtual public OfxhIObject
 {
 protected:
 	property::OfxhSet _properties;

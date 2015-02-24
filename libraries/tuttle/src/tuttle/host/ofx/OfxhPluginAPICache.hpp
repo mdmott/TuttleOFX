@@ -43,7 +43,7 @@ class OfxhPluginBinary;
 namespace APICache {
 
 /// this acts as an interface for the Plugin Cache, handling api-specific cacheing
-class OfxhPluginAPICacheI
+class TUTTLE_EXPORT OfxhPluginAPICacheI
 {
 public:
 	std::string _apiName;

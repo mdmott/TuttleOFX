@@ -59,7 +59,7 @@ namespace imageEffect {
  *
  *  Client code needs to filling the pure virtuals in this.
  */
-class OfxhImageEffectNode : public OfxhImageEffectNodeBase
+class TUTTLE_EXPORT OfxhImageEffectNode : public OfxhImageEffectNodeBase
 	, public attribute::OfxhParamSet
 	, public attribute::OfxhClipImageSet
 	, public OfxhIProgress

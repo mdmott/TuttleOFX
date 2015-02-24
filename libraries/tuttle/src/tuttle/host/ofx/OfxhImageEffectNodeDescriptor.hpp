@@ -17,7 +17,7 @@ namespace imageEffect {
 /**
  * an image effect plugin descriptor
  */
-class OfxhImageEffectNodeDescriptor
+class TUTTLE_EXPORT OfxhImageEffectNodeDescriptor
 	: public OfxhImageEffectNodeBase
 	, public attribute::OfxhParamSetDescriptor
 	, private boost::noncopyable
