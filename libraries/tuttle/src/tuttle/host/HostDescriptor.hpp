@@ -3,6 +3,7 @@
 
 #include <tuttle/host/ofx/OfxhImageEffectHost.hpp>
 #include <tuttle/host/ImageEffectNode.hpp>
+#include <tuttle/common/export.h>
 
 namespace tuttle {
 namespace host {
@@ -17,7 +18,7 @@ namespace host {
  *
  * @todo how to support multiple APIs...
  */
-class Host : public tuttle::host::ofx::imageEffect::OfxhImageEffectHost
+class TUTTLE_EXPORT Host : public tuttle::host::ofx::imageEffect::OfxhImageEffectHost
 {
 public:
 	Host();
