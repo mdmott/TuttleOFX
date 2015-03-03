@@ -18,7 +18,7 @@ private:
 	static T* inst;
 
 	Singleton( const Singleton& ) {}
-	Singleton& operator=( const Singleton& ) {}
+	Singleton& operator=( const Singleton& ) { return *this; }
 
 protected:
 	Singleton() {}
