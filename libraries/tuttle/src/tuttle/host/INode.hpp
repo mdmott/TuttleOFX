@@ -6,6 +6,7 @@
 #include <ofxCore.h>
 #include <ofxAttribute.h>
 #include <tuttle/host/Callback.hpp>
+#include <tuttle/common/export.h>
 
 #include <boost/noncopyable.hpp>
 
@@ -44,7 +45,7 @@ class ProcessVertexAtTimeInfo;
 class ImageEffectNode;
 
 
-class INode : private boost::noncopyable
+class TUTTLE_EXPORT INode : private boost::noncopyable
 {
 public:
 	typedef INode This;
