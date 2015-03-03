@@ -1,6 +1,8 @@
 #ifndef _BOOST_ERROR_INFO_SSTREAM_HPP
 #define	_BOOST_ERROR_INFO_SSTREAM_HPP
 
+#include <tuttle/common/utils/global.hpp>
+
 #include <boost/exception/exception.hpp>
 #include <boost/exception/info.hpp>
 #include <boost/version.hpp>

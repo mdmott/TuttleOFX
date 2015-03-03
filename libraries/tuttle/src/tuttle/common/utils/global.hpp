@@ -1,14 +1,14 @@
 #ifndef _TUTTLE_COMMON_UTILS_GLOBAL_HPP_
 #define _TUTTLE_COMMON_UTILS_GLOBAL_HPP_
 
-#include "color.hpp"
-#include "Formatter.hpp"
-
 ////////////////////////////////////////////////////////////////////////////////
-// System stuff
+// System stuff - we need it earlier than any headers which include boost
+#include <tuttle/common/system/windows/windows.h>  // we need it before others
 #include <tuttle/common/system/system.hpp>
 #include <tuttle/common/system/compatibility.hpp>
-#include <tuttle/common/system/windows/windows.h>
+
+#include "color.hpp"
+#include "Formatter.hpp"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Assert needs to be everywhere

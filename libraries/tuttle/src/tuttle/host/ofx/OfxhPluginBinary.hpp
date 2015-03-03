@@ -5,6 +5,7 @@
 #include "OfxhBinary.hpp"
 #include "OfxhCore.hpp"
 
+#include <boost/noncopyable.hpp>
 #include <boost/ptr_container/serialize_ptr_vector.hpp>
 #include <boost/serialization/string.hpp>
 
@@ -21,6 +22,7 @@ class OfxhPluginCache;
  * These are owned by a PluginCache
  */
 class TUTTLE_EXPORT OfxhPluginBinary
+   : boost::noncopyable // to avoid defining "OfxhPlugin* new_clone( const OfxhPlugin& )" for ptr_vector below
 {
 public:
 	typedef OfxhPluginBinary This;

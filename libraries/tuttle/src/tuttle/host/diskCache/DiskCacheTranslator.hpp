@@ -1,6 +1,8 @@
 #ifndef _TUTTLEOFX_HOST_DISKCACHETRANSLATOR_HPP_
 #define _TUTTLEOFX_HOST_DISKCACHETRANSLATOR_HPP_
 
+#include <tuttle/common/utils/global.hpp>
+
 #include <boost/filesystem/path.hpp>
 
 #include <cstddef>
