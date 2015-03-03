@@ -5,6 +5,7 @@
 #include "OfxhUtilities.hpp"
 
 #include <tuttle/host/exceptions.hpp>
+#include <tuttle/common/export.h>
 
 #include <boost/throw_exception.hpp>
 #include <boost/exception/exception.hpp>
@@ -18,7 +19,7 @@ namespace ofx {
 /**
  * exception, representing an OfxStatus
  */
-class OfxhException : virtual public ::std::exception
+class TUTTLE_EXPORT OfxhException : virtual public ::std::exception
 	, virtual public ::boost::exception
 	, virtual public ::boost::backtrace
 {

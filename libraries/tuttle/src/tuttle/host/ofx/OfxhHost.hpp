@@ -53,7 +53,7 @@ class OfxhParamDescriptor;
  * Base class for all objects passed to a plugin by the 'setHost' function
  * passed back by any plug-in.
  */
-class OfxhHost
+class TUTTLE_EXPORT OfxhHost
 {
 protected:
 	OfxHost _host;

@@ -63,7 +63,7 @@ class OfxhImageEffectPluginCache;
  * subclass of Plugin representing an ImageEffect plugin.
  * used to store API-specific data
  */
-class OfxhImageEffectPlugin : public OfxhPlugin
+class TUTTLE_EXPORT OfxhImageEffectPlugin : public OfxhPlugin
 {
 public:
 	typedef OfxhImageEffectPlugin This;

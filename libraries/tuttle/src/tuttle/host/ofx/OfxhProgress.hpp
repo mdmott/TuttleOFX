@@ -39,7 +39,7 @@ namespace ofx {
 
 /// Things that display progress derive from this ABC and implement the following
 /// functions.
-class OfxhIProgress : virtual public OfxhIObject
+class TUTTLE_EXPORT OfxhIProgress : virtual public OfxhIObject
 {
 public:
 	virtual ~OfxhIProgress() {}

@@ -1,6 +1,8 @@
 #ifndef _TUTTLE_HOST_CORE_NODELISTARG_HPP_
 #define _TUTTLE_HOST_CORE_NODELISTARG_HPP_
 
+#include <tuttle/common/utils/global.hpp>
+
 #include <string>
 #include <list>
 

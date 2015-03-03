@@ -86,14 +86,10 @@ namespace tuttle {
 namespace host {
 namespace ofx {
 
-struct PluginCacheSupportedApi
-{
-	APICache::OfxhPluginAPICacheI* _handler;
-
-	PluginCacheSupportedApi( APICache::OfxhPluginAPICacheI* handler )
+	PluginCacheSupportedApi::PluginCacheSupportedApi( APICache::OfxhPluginAPICacheI* handler )
 		: _handler( handler ) {}
 
-	bool matches( std::string api, int version ) const
+	bool PluginCacheSupportedApi::matches( std::string api, int version ) const
 	{
 		if( api == _handler->_apiName && version >= _handler->_apiVersionMin && version <= _handler->_apiVersionMax )
 		{
@@ -101,8 +97,6 @@ struct PluginCacheSupportedApi
 		}
 		return false;
 	}
-};
-
 
 #if defined ( __linux__ )
 

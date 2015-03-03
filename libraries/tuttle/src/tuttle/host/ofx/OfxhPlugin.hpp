@@ -16,7 +16,7 @@ class OfxhPluginBinary;
  * Owned by the PluginBinary it lives inside.
  * Plugins can only be pass about either by pointer or reference.
  */
-class OfxhPlugin : public OfxhPluginDesc
+class TUTTLE_EXPORT OfxhPlugin : public OfxhPluginDesc
 {
 public:
 	typedef OfxhPlugin This;

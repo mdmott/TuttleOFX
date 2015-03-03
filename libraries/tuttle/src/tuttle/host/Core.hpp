@@ -18,7 +18,7 @@
 namespace tuttle {
 namespace host {
 
-class Core : public Singleton<Core>
+class TUTTLE_EXPORT Core : public Singleton<Core>
 {
 public:
 	typedef Core This;

@@ -16,7 +16,7 @@ class NodeInit;
 
 using boost::assign::list_of;
 
-INode* createNode( const std::string& pluginName );
+TUTTLE_EXPORT INode* createNode( const std::string& pluginName );
 
 bool compute( const std::vector<NodeInit>& nodes,
 		const ComputeOptions& options = ComputeOptions() );

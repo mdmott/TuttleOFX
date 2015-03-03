@@ -9,6 +9,8 @@
 #include <boost/serialization/export.hpp>
 #include <boost/serialization/string.hpp>
 
+#include <tuttle/common/export.h>
+
 namespace tuttle {
 namespace host {
 namespace ofx {
@@ -48,7 +50,7 @@ struct OfxhPluginIdent
 /**
  * C++ version of the information kept inside an OfxPlugin struct
  */
-class OfxhPluginDesc
+class TUTTLE_EXPORT OfxhPluginDesc
 {
 public:
 	typedef OfxhPluginDesc This;

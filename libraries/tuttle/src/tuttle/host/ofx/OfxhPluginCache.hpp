@@ -50,12 +50,19 @@ namespace tuttle {
 namespace host {
 namespace ofx {
 
-struct PluginCacheSupportedApi;
+struct PluginCacheSupportedApi
+{
+	APICache::OfxhPluginAPICacheI* _handler;
+
+	PluginCacheSupportedApi( APICache::OfxhPluginAPICacheI* handler );
+
+	bool matches( std::string api, int version ) const;
+};
 
 /**
  * Where we keep our plugins.
  */
-class OfxhPluginCache
+class TUTTLE_EXPORT OfxhPluginCache
 {
 public:
 	typedef OfxhPluginCache This;

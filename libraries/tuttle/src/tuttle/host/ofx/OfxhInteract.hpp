@@ -42,7 +42,7 @@ namespace host {
 namespace ofx {
 namespace interact {
 
-class OfxhInteractBase
+class TUTTLE_EXPORT OfxhInteractBase
 {
 public:
 	OfxhInteractBase()

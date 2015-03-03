@@ -10,7 +10,7 @@ namespace tuttle {
 namespace host {
 namespace ofx {
 
-class OfxhIMessage : virtual public OfxhIObject
+class TUTTLE_EXPORT OfxhIMessage : virtual public OfxhIObject
 {
 public:
 	virtual ~OfxhIMessage() {}

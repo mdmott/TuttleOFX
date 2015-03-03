@@ -6,6 +6,8 @@
 #ifndef _COREPLUGIN_H_
 #define _COREPLUGIN_H_
 
+#include <tuttle/common/utils/global.hpp>
+
 #include <stddef.h> // for size_t
 #include <limits.h>
 
