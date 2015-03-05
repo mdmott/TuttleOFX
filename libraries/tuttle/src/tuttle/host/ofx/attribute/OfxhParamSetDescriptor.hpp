@@ -13,7 +13,7 @@ namespace ofx {
 namespace attribute {
 
 /// a set of parameters
-class OfxhParamSetDescriptor : public OfxhParamSetAccessor
+class TUTTLE_EXPORT OfxhParamSetDescriptor : public OfxhParamSetAccessor
 {
 public:
 	typedef OfxhParamSetDescriptor This;
