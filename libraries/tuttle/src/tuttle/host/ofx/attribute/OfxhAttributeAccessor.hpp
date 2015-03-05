@@ -2,6 +2,7 @@
 #define _TUTTLE_HOST_OFX_ATTRIBUTE_ATTRIBUTEACCESSOR_HPP_
 
 #include <tuttle/host/ofx/property/OfxhSet.hpp>
+#include <tuttle/common/export.h>
 
 #include <ofxCore.h>
 #include <ofxAttribute.h>
@@ -13,7 +14,7 @@ namespace host {
 namespace ofx {
 namespace attribute {
 
-class OfxhAttributeAccessor
+class TUTTLE_EXPORT OfxhAttributeAccessor
 {
 public:
 	OfxhAttributeAccessor();

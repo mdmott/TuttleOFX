@@ -9,7 +9,7 @@ namespace host {
 namespace ofx {
 namespace attribute {
 
-class OfxhAttributeDescriptor
+class TUTTLE_EXPORT OfxhAttributeDescriptor
 	: virtual public OfxhAttributeAccessor
 {
 public:

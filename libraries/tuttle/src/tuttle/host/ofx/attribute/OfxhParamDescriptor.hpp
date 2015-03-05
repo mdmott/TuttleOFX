@@ -15,7 +15,7 @@ namespace attribute {
 bool isStandardType( const std::string& BaseType );
 
 /// the Descriptor of a plugin parameter
-class OfxhParamDescriptor
+class TUTTLE_EXPORT OfxhParamDescriptor
 	: public OfxhAttributeDescriptor
 	, virtual public OfxhParamAccessor
 {

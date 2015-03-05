@@ -58,7 +58,7 @@ typedef boost::ptr_map<std::string, OfxhProperty> PropertyMap;
  * The 'fetch' methods return a property object.
  * The 'get' methods return a property value
  */
-class OfxhSet
+class TUTTLE_EXPORT OfxhSet
 {
 public:
 	typedef OfxhSet This;

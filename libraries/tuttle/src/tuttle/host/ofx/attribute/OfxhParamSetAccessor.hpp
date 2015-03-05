@@ -2,6 +2,7 @@
 #define _TUTTLE_HOST_OFX_PARAM_PARAMSETACCESSOR_HPP_
 
 #include <tuttle/host/ofx/property/OfxhSet.hpp>
+#include <tuttle/common/export.h>
 
 #include <ofxParam.h>
 
@@ -11,7 +12,7 @@ namespace ofx {
 namespace attribute {
 
 /// base class to the param set instance and param set descriptor
-class OfxhParamSetAccessor
+class TUTTLE_EXPORT OfxhParamSetAccessor
 {
 public:
 	virtual ~OfxhParamSetAccessor() = 0;

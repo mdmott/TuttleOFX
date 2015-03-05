@@ -13,7 +13,7 @@ namespace ofx {
 namespace attribute {
 
 /// base class for all params
-class OfxhParamAccessor : virtual public OfxhAttributeAccessor
+class TUTTLE_EXPORT OfxhParamAccessor : virtual public OfxhAttributeAccessor
 {
 public:
 	OfxhParamAccessor();
