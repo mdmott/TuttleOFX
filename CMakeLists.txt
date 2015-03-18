@@ -10,7 +10,11 @@ if(TUTTLE_PRODUCTION)
   add_definitions(-DTUTTLE_PRODUCTION)
 endif()
 
-add_definitions(-DTUTTLE_EXPORTS)
+if(BUILD_SHARED_LIBS)
+  add_definitions(-DTUTTLE_EXPORTS)
+else(BUILD_SHARED_LIBS)
+  add_definitions(-DTUTTLEOFX_STATIC)
+endif(BUILD_SHARED_LIBS)
 
 # Include subdirs
 add_subdirectory(libraries/tuttle)

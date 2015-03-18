@@ -1,9 +1,12 @@
 
 # Boost for the whole Tuttle project
 
-set(Boost_USE_STATIC_LIBS OFF)
-add_definitions(-DBOOST_LOG_DYN_LINK)
+#set(Boost_USE_STATIC_LIBS OFF)
+if(BUILD_SHARED_LIBS)
+  add_definitions(-DBOOST_LOG_DYN_LINK)
+endif(BUILD_SHARED_LIBS)
 add_definitions(-DBOOST_ALL_NO_LIB)
+
 find_package(Boost 1.53.0 
     REQUIRED COMPONENTS regex date_time chrono thread serialization system filesystem atomic log program_options timer QUIET)
 

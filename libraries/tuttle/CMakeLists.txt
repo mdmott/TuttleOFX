@@ -30,8 +30,9 @@ if (TuttleBoost_FOUND)
   find_package(sequenceParser)
   include_directories(${SEQUENCEPARSER_INCLUDE_DIR})
   
-  # Target is a shared library
-  add_library(tuttleHost SHARED ${TUTTLE_HOST_SRC_FILES})
+  # Target is a shared or static library depending on the value of BUILD_SHARED_LIBS
+  add_library(tuttleHost ${TUTTLE_HOST_SRC_FILES})
+
 
   # Extract tuttleHost_VERSION_MAJOR/MINOR/MICRO from version.hpp
   file(STRINGS "src/tuttle/host/version.hpp" _tuttleHost_VERSION_HPP_CONTENTS REGEX "#define TUTTLE_HOST_VERSION_")
@@ -79,28 +80,43 @@ if (TuttleBoost_FOUND)
 
   # Add a target with only object files to avoid recompiling sequence parser
   # multiple times
-  add_library(sequenceParser SHARED ${SEQUENCEPARSER_FILES}) 
-  set_target_properties(sequenceParser
-                        PROPERTIES COMPILE_FLAGS "-fPIC")
+  # Target is a shared or static library depending on the value of BUILD_SHARED_LIBS
+  add_library(sequenceParser ${SEQUENCEPARSER_FILES}) 
+  if (UNIX)
+      set_target_properties(sequenceParser PROPERTIES COMPILE_FLAGS "-fPIC")
+  endif(UNIX)
   target_link_libraries(sequenceParser ${Boost_LIBRARIES})
   
   # Adds a support library for common and plugins
   # only compile object files, and use them at link time
   add_library(tuttleCommon STATIC ${TUTTLE_COMMON_FILES}) 
-  set_target_properties(tuttleCommon
-                        PROPERTIES COMPILE_FLAGS "-fPIC")
+  if (UNIX)
+      set_target_properties(tuttleCommon PROPERTIES COMPILE_FLAGS "-fPIC")
+  endif(UNIX)
+
   add_library(tuttlePluginLib STATIC ${OFXPP_FILES})
   find_package(Threads)
   target_link_libraries(tuttleCommon ${CMAKE_THREAD_LIBS_INIT})
 
   # Utilities for OFX plugins
   target_link_libraries(tuttlePluginLib sequenceParser) 
-  set_target_properties(tuttlePluginLib
-                        PROPERTIES COMPILE_FLAGS "-fPIC")
+  if (UNIX)
+      set_target_properties(tuttlePluginLib PROPERTIES COMPILE_FLAGS "-fPIC")
+  endif(UNIX)
 
 
   # Install tuttle host library in INSTALL_PREFIX/lib/
   install(TARGETS tuttleHost DESTINATION lib/)
+
+  # Since CMake 2.8.?, MSVC PDBs are no longer installed. So we add this rule to
+  # explicitly install the PDB(s)
+  IF(MSVC AND BUILD_SHARED_LIBS)
+    INSTALL ( FILES ${PROJECT_BINARY_DIR}/libraries/tuttle/Debug/tuttleHost.pdb
+              CONFIGURATIONS Debug
+              DESTINATION lib/
+            )
+  ENDIF(MSVC)
+
   install(TARGETS sequenceParser DESTINATION lib/)
 
   install(DIRECTORY src/tuttle/host src/tuttle/common

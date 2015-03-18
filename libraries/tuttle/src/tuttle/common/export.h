@@ -1,10 +1,14 @@
 #pragma once
 
 #if defined(_MSC_VER)
-    #if defined(TUTTLE_EXPORTS)
-        #define TUTTLE_EXPORT __declspec(dllexport)
+    #if defined (TUTTLEOFX_STATIC)
+        #define TUTTLE_EXPORT
     #else
-        #define TUTTLE_EXPORT __declspec(dllimport)
+        #if defined(TUTTLE_EXPORTS)
+            #define TUTTLE_EXPORT __declspec(dllexport)
+        #else
+            #define TUTTLE_EXPORT __declspec(dllimport)
+        #endif
     #endif
 #else
     #define TUTTLE_EXPORT
