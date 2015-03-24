@@ -2,6 +2,7 @@
 #define	_TUTTLE_COMMON_COLOR_HPP_
 
 #include <tuttle/common/system/system.hpp>
+#include <tuttle/common/export.h>
 
 #include <boost/utility.hpp>
 #include <boost/shared_ptr.hpp>
@@ -45,7 +46,7 @@ static const std::string kColorError    ( "" );
 #endif
 }
 
-class Color : boost::noncopyable
+class TUTTLE_EXPORT Color : boost::noncopyable
 {
 private:
 	Color( ) { }

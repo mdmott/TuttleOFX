@@ -11,7 +11,7 @@ namespace tuttle {
 namespace host {
 namespace memory {
 
-class MemoryCache : public IMemoryCache
+class TUTTLE_EXPORT MemoryCache : public IMemoryCache
 {
 typedef MemoryCache This;
 
@@ -51,11 +51,11 @@ public:
 		os << *this;
 		return os;
 	}
-	friend std::ostream& operator<<( std::ostream& os, const MemoryCache& v );
+	friend TUTTLE_EXPORT std::ostream& operator<<( std::ostream& os, const MemoryCache& v );
 };
 
 #ifndef SWIG
-std::ostream& operator<<( std::ostream& os, const MemoryCache& memoryCache );
+TUTTLE_EXPORT std::ostream& operator<<( std::ostream& os, const MemoryCache& memoryCache );
 #endif
 }
 }
