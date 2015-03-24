@@ -46,7 +46,7 @@ enum severity_level
 namespace tuttle {
 namespace common {
 
-class Formatter : boost::noncopyable
+class TUTTLE_EXPORT Formatter : boost::noncopyable
 {
 #ifndef WITHOUT_BOOST_LOG
 #ifndef SWIG

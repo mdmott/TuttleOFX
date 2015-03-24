@@ -3,6 +3,8 @@
 
 #include "IMemoryPool.hpp"
 
+#include <tuttle/common/export.h>
+
 #include <boost/shared_ptr.hpp> ///< @todo temporary solution..
 #include <string>
 
@@ -46,7 +48,7 @@ struct KeyHash : std::unary_function<Key, std::size_t>
 };
 //typedef IPoolDataPtr CACHE_ELEMENT;
 
-class IMemoryCache
+class TUTTLE_EXPORT IMemoryCache
 {
 typedef IMemoryCache This;
 public:
