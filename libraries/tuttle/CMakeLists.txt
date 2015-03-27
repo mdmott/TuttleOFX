@@ -99,7 +99,7 @@ if (TuttleBoost_FOUND)
   target_link_libraries(tuttleCommon ${CMAKE_THREAD_LIBS_INIT})
 
   # Utilities for OFX plugins
-  target_link_libraries(tuttlePluginLib sequenceParser) 
+  target_link_libraries(tuttlePluginLib) 
   if (UNIX)
       set_target_properties(tuttlePluginLib PROPERTIES COMPILE_FLAGS "-fPIC")
   endif(UNIX)
