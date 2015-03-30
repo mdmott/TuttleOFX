@@ -12,7 +12,7 @@
 namespace tuttle {
 namespace host {
 
-class InputBufferWrapper
+class TUTTLE_EXPORT InputBufferWrapper
 {
 public:
 	enum EMode
