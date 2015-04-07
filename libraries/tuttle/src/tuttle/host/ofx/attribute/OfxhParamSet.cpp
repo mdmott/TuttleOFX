@@ -170,9 +170,16 @@ OfxhParam& OfxhParamSet::getParam( const std::size_t index )
 
 void OfxhParamSet::addParam( OfxhParam* instance ) OFX_EXCEPTION_SPEC
 {
-	if( _params.find( instance->getName() ) != _params.end() )
+	ParamMap::const_iterator i = _params.find( instance->getName() );
+	if( i != _params.end() )
 	{
-		BOOST_THROW_EXCEPTION( OfxhException( kOfxStatErrExists, "Trying to add a new parameter which already exists." ) );
+		TUTTLE_LOG_WARNING(
+			"OfxhParam::addParam(): new parameter " << instance->getName()
+			<< " (" << instance->getScriptName() << ") conflicts with existing"
+			" param " << i->second->getName() << " ("
+			<< i->second->getScriptName() << ")"
+		);
+		return;
 	}
 	_paramVector.push_back( instance );
 	_params[instance->getName()] = instance;
