@@ -3,6 +3,8 @@
 
 #include <string>
 
+#include <tuttle/common/export.h>
+
 namespace tuttle {
 namespace host {
 
@@ -10,7 +12,7 @@ class INode;
 
 namespace attribute {
 
-class Attribute
+class TUTTLE_EXPORT Attribute
 {
 protected:
 	/*const*/ INode& _effect;

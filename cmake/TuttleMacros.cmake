@@ -22,6 +22,9 @@ function(tuttle_ofx_architecture ARCH)
     elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
         # Assume x86_64
         set(${ARCH} "Linux-x86-64" PARENT_SCOPE)
+    elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
+        # Assume x86_64 again
+        set(${ARCH} "Win64" PARENT_SCOPE)
     endif(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
 endfunction(tuttle_ofx_architecture) 
 

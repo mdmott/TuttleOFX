@@ -10,7 +10,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamInteger3D : public Param
+class TUTTLE_EXPORT ParamInteger3D : public Param
 	, public ofx::attribute::OfxhMultiDimParam<ParamInteger, 3 >
 {
 public:

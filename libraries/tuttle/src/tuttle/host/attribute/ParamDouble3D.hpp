@@ -8,7 +8,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamDouble3D : public Param
+class TUTTLE_EXPORT ParamDouble3D : public Param
 	, public ParamDoubleMultiDim<3>
 {
 public:

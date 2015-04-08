@@ -12,7 +12,7 @@
 namespace tuttle {
 namespace host {
 
-class OutputBufferWrapper
+class TUTTLE_EXPORT OutputBufferWrapper
 {
 private:
 	INode* _node;

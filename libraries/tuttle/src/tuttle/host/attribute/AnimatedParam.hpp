@@ -24,7 +24,7 @@ namespace host {
 namespace attribute {
 
 template<typename T, typename OFX_PARAM>
-class AnimatedParam : public Param, public OFX_PARAM
+class TUTTLE_EXPORT AnimatedParam : public Param, public OFX_PARAM
 {
 protected:
 	T _value;

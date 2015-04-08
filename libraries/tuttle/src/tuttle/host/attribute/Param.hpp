@@ -11,7 +11,7 @@ class INode;
 
 namespace attribute {
 
-class Param : public Attribute
+class TUTTLE_EXPORT Param : public Attribute
 	, virtual public ofx::attribute::OfxhParamAccessor
 {
 public:

@@ -9,7 +9,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamChoice : public Param
+class TUTTLE_EXPORT ParamChoice : public Param
 	, public ofx::attribute::OfxhParamChoice
 {
 protected:

@@ -22,7 +22,7 @@ class ClipImage;
 /**
  * make an image up
  */
-class Image : public tuttle::host::ofx::imageEffect::OfxhImage
+class TUTTLE_EXPORT Image : public tuttle::host::ofx::imageEffect::OfxhImage
 {
 public:
 	enum EImageOrientation
