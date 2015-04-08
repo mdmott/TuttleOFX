@@ -8,7 +8,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamInteger :
+class TUTTLE_EXPORT ParamInteger :
 	public AnimatedParamInteger
 {
 public:

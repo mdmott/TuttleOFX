@@ -8,7 +8,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamDouble : public AnimatedParamDouble
+class TUTTLE_EXPORT ParamDouble : public AnimatedParamDouble
 {
 public:
 	ParamDouble( INode& effect, const std::string& name, const ofx::attribute::OfxhParamDescriptor& descriptor, const std::size_t index = 0 );

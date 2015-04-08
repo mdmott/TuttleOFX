@@ -9,7 +9,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamPushButton : public Param
+class TUTTLE_EXPORT ParamPushButton : public Param
 	, public ofx::attribute::OfxhParamPushButton
 {
 public:

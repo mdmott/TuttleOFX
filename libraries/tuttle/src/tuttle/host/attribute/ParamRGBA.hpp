@@ -10,7 +10,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamRGBA : public Param
+class TUTTLE_EXPORT ParamRGBA : public Param
 	, public ParamDoubleMultiDim<4>
 {
 public:

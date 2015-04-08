@@ -11,7 +11,7 @@ namespace tuttle {
 namespace host {
 namespace attribute {
 
-class ParamRGB : public Param
+class TUTTLE_EXPORT ParamRGB : public Param
 	, public ParamDoubleMultiDim<3>
 {
 public:

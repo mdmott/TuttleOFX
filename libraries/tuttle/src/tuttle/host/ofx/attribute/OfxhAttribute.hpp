@@ -49,7 +49,7 @@ inline EChange mapChangeStringToEnum( const std::string& change )
 		return eChangeNone;
 }
 
-class OfxhAttribute : virtual public OfxhAttributeAccessor
+class TUTTLE_EXPORT OfxhAttribute : virtual public OfxhAttributeAccessor
 {
 public:
 	typedef OfxhAttribute This;

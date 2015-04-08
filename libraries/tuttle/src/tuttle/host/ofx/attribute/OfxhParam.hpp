@@ -115,7 +115,7 @@ class OfxhParamDescriptor;
 class OfxhParamSet;
 
 /// plugin parameter instance
-class OfxhParam
+class TUTTLE_EXPORT OfxhParam
 	: public OfxhAttribute
 	, virtual public OfxhParamAccessor
 	, protected property::OfxhNotifyHook
