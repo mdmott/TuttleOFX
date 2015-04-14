@@ -13,7 +13,7 @@ namespace attribute {
  * is used to basically fetch common properties
  * by function name
  */
-class OfxhClipAccessor : virtual public OfxhAttributeAccessor
+class TUTTLE_EXPORT OfxhClipAccessor : virtual public OfxhAttributeAccessor
 {
 public:
 	/// @brief base ctor, for a descriptor
