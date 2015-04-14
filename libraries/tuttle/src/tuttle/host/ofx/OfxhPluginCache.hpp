@@ -114,6 +114,11 @@ public:
 		return _pluginPath;
 	}
 
+	void clearPluginPaths()
+   {
+      _pluginPath.clear();
+   }
+
 	/// was the cache outdated?
 	bool isDirty() const
 	{
