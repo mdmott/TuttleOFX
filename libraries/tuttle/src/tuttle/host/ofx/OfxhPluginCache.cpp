@@ -157,6 +157,8 @@ OfxhPluginCache::OfxhPluginCache()
 	, _dirty( false )
 	, _enablePluginSeek( true )
 {
+   clearPluginPaths();
+
 	std::string s = OFXGetEnv( "OFX_PLUGIN_PATH" );
 
 	while( s.length() )

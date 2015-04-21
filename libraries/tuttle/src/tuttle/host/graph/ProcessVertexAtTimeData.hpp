@@ -51,6 +51,10 @@ public:
 		, _inDegree( 0 )
 	{
 		_localInfos._nodes = 1; // local infos can contain only 1 node by definition...
+      
+      _apiImageEffect._renderRoI.x1 = _apiImageEffect._renderRoI.x2 = 0;
+      _apiImageEffect._renderRoI.y1 = _apiImageEffect._renderRoI.y2 = 0;
+      _apiImageEffect._field = kOfxImageFieldNone;
 	}
 
 	ProcessVertexAtTimeData( const ProcessVertexData& nodeData, const OfxTime time )
@@ -61,7 +65,11 @@ public:
 		, _inDegree( 0 )
 	{
 		_localInfos._nodes = 1; // local infos can contain only 1 node by definition...
-	}
+
+      _apiImageEffect._renderRoI.x1 = _apiImageEffect._renderRoI.x2 = 0;
+      _apiImageEffect._renderRoI.y1 = _apiImageEffect._renderRoI.y2 = 0;
+      _apiImageEffect._field = kOfxImageFieldNone;
+   }
 
 	ProcessVertexAtTimeData( const This& other )
 		: _nodeData( other._nodeData )
