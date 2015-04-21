@@ -356,7 +356,7 @@ public:
  * @brief This class is just a re-implementation dedicated to Double Param.
  *        It allows implicit conversion from Int to Double.
  */
-class AnimatedParamDouble : public AnimatedParam<double, ofx::attribute::OfxhParamDouble>
+class TUTTLE_EXPORT AnimatedParamDouble : public AnimatedParam<double, ofx::attribute::OfxhParamDouble>
 {
 	typedef AnimatedParam<double, ofx::attribute::OfxhParamDouble> Parent;
 	
